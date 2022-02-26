@@ -1,0 +1,3 @@
+# vars file for web-server
+webContent: Rajendra1.html
+apachePort: 9090

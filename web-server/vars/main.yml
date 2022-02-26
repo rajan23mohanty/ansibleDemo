@@ -1,0 +1,4 @@
+---
+# vars file for web-server
+webContent: Rajendra.html
+#apachePort: 8095

@@ -1,0 +1,19 @@
+- hosts: webservers
+
+  become: true
+
+  tasks:
+
+  - name: Update the apt Cache
+    apt:
+      update_cache: yes
+
+  - name: install OpenJDK Java 11
+    apt:
+      name: openjdk-8-jdk
+      state: present
+
+  - name: SET JAVA_HOME
+    shell: sudo echo "export JAVA_HOME=usr/lib/jvm" >> ~/.bashrc
+
+
